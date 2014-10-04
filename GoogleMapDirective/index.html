@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Google Map Directive</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6U2ExB8yLDc7RiGPYK3C3yIzDPpyFJE0&sensor=false"></script>
+    <script data-semver="1.2.22" src="https://code.angularjs.org/1.2.22/angular.js" data-require="angular.js@1.2.x"></script>
+    <script src="app.js"></script>
+    <style>
+        #mapSize{height: 600px; width:100%;}
+        </style>
+        
+  </head>
+
+  <body ng-controller="MainCtrl as vm">
+    <p>Angular Directives and Hooking into Google Maps API</p>
+    <button ng-click="vm.addMarker()">Add Marker</button>
+    <map-directive></map-directive>
+
+  </body>
+
+</html>
